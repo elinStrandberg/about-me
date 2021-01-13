@@ -1,0 +1,221 @@
+
+/* Här är styling som gäller för hela sidan */
+body {
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  text-align: center;
+  color:black
+ /*  color: #293f4c;
+ box-sizing: border-box;*/
+
+}
+
+/* Container klassen är en klass som vi återanvänder mycket i vår html, 
+den gör att varje sektion blir 80% av sidan och att det blir samma padding över 
+hela sidan. Den styr med andra ord väldigt mycket av grund layouten. */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/* Här är styling som gäller för alla rubriker och texter */
+
+h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+/* Här är styling för textboxen about-me sektionen och greatness sektionen. */
+
+.text-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+ .menu{
+    display: flex; /* Gör att dom lägger sig brevid varandra */
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #eee3e1;
+
+ }
+
+ .menuitem{
+  border: none;
+  color: black;
+  padding: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+ 
+ }
+ .menuitem:hover{
+  background-color: #293f4c;
+  color: white;
+  border-radius: 40px; /* Gör att knappen får runda hörn */
+}
+ 
+/* Här finns all styling för knappen */
+.button {
+  background-color: #eee3e1;
+  color: black;
+  padding: 25px;
+  border-radius: 40px; /* Gör att knappen får runda hörn */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.button:hover{
+  opacity: 1.0;
+  color: black;
+  background-color: #eee3e1;
+}
+
+/* Här är styling för about-me sektionen */
+
+.about-me {
+  background-color: #293f4c;
+  position: relative;
+  z-index: 1;
+  padding: 150px 30px;
+  color: #eee3e1;
+}
+
+.about-me .bg {
+  position: absolute;
+  z-index: -1;
+  
+  /*background: url("./pictures/background_image.jpg");*/
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.things {
+  display: flex; /* Gör att dom lägger sig brevid varandra */
+  justify-content: center;
+  align-items: center;
+}
+
+.thing {
+  margin: 40px;
+}
+
+.thing img{
+  width: 150px;
+  opacity: 0.3;
+}
+
+.thing img:hover {
+  opacity: 1.0;
+}
+
+/* Här är styling för bilden som ligger i about-me sektionen */
+
+.about-me img {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Här är styling för greatness sektionen */
+
+.greatness {
+  padding: 150px 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Här är styling för footern på sidan */
+
+.my-motto {
+  background-color: #eee3e1;
+}
+
+footer {
+  background-color: #151515;
+  color: #eee3e1;
+}
+
+/*Bakgrundsfärg mörkgrön #293f4c*/
+/*Bakgrundsfärg ljus #eee3e1*/
+/*Textfärg mörk #293f4c*/
+/*Textfärg ljus bakgrund #eee3e1*/
+/*Bakgrund footer #accdd7*/
+
+/*att göra: 
+Lägg till kontakta mig box
+Gör sidan responsiv
+Lägg till klickbara flikar överst på sidan med mer detaljerad info, typ "home", "CV" ,"about me", github, kontakt etc.
+Koppla till github
+
+*/
+
+.experience-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+.experience-wrapper > * {
+  padding: 10px ;
+  flex: 1 0;  
+}
+
+.experience-item{
+  /* background:salmon ; */
+  
+}
+
+.Flextest{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.Flextest > * {
+  padding: 10px ;
+  flex: 1 0;  
+}
+
+.FlextestItem{
+  background:salmon ;
+  
+}
